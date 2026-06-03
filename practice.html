@@ -14,7 +14,6 @@
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
     }
 
-    /* --- Quick links (translated) --- */
     .quick-link {
       position: fixed;
       right: 10px;
@@ -48,11 +47,11 @@
     #ui .love:last-child .love_word {
       color: #fff;
       font-size: 2rem;
-      text-shadow: 0 0 10px #ea80b0;
+      text-shadow: 0 0 10px #de8ab0;
     }
     /* Make the last item match the others */
 #ui .love:last-child .love_word {
-  color: #ea80b0;
+  color: #d57fa6;
   font-size: 1.4rem;
   text-shadow: 0 0 10px #fff;
 }
@@ -110,7 +109,7 @@
 
   <script>
     // Create N floating “I love you” items (was multilingual; now all English)
-    const N = 90;     // adjust if you want fewer/more
+    const N = 80;     // adjust if you want fewer/more
     const ui = document.getElementById('ui');
 
     for (let i = 1; i <= N; i++) {
@@ -126,7 +125,7 @@
 
       const word = document.createElement('div');
       word.className = 'love_word';
-      word.textContent = 'I love you';
+      word.textContent = '사랑해';
 
       v.appendChild(word);
       h.appendChild(v);
