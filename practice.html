@@ -66,11 +66,11 @@
     }
     #ui .love_horizontal {
       animation: horizontal 15000ms infinite alternate ease-in-out;
-      animation-delay: calc(var(--i) * -250ms);
+      animation-delay: calc(var(--i) * -450ms);
     }
     #ui .love_vertical {
       animation: vertical 30000ms infinite linear;
-      animation-delay: calc(var(--i) * -500ms);
+      animation-delay: calc(var(--i) * -450ms);
     }
 
     /* --- Animations (unchanged) --- */
@@ -109,7 +109,7 @@
 
   <script>
     // Create N floating “I love you” items (was multilingual; now all English)
-    const N = 60;     // adjust if you want fewer/more
+    const N = 80;     // adjust if you want fewer/more
     const ui = document.getElementById('ui');
 
     for (let i = 1; i <= N; i++) {
